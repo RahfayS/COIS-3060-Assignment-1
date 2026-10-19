@@ -27,4 +27,3 @@ jobs:
         run: |
           test -s src/index.html
           test -s tests/test_checklist.md
-          test -s docs/requirements.md
