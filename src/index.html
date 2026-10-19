@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header containing links to different tabs-->
+    <header class="tab-header">
+      <div class="tab">
+        <button onclick="toggleTab('data-sources')">Data Sources</button>
+        <button onclick="toggleTab('collection-methods')">
+          Collection Methods
+        </button>
+        <button onclick="toggleTab('analysis-methods')">
+          Analysis Methods
+        </button>
+        <button onclick="toggleTab('publication-venues')">
+          Publication Venues
+        </button>
+      </div>
+    </header>
+    <main class="content-panel">
+      <section id="home" class="tab-content" style="display: block">
+        <h2>Home</h2>
+      </section>
+      <section id="data-sources" class="tab-content" style="display: none">
+        <h2>Data Sources</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Source Name</th>
+              <th>Data it Provides</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GitHub</td>
+              <td>Repositories, Commits, Pull Requests, Issues, Stars</td>
+              <td>
+                GitHub provides software repository data, including source code,
+                commit histories, branches, pull requests, issues, releases, and
+                contributor activity. This data can be used to study how
+                software evolves, how developers collaborate, and how projects
+                manage bugs and contributions
+              </td>
+            </tr>
+            <tr>
+              <td>Stack Overflow</td>
+              <td>Questions, Answers, Tags, User Reputation</td>
+              <td>
+                Stack Overflow provides programming questions and answers, along
+                with tags, comments, votes, accepted answers, and timestamps.
+                This data can be used to study common programming challenges,
+                developer knowledge sharing, and trends in technologies and
+                tools.
+              </td>
+            </tr>
+            <tr>
+              <td>JIRA</td>
+              <td>Issue Tracking, Sprint Data, Bug Reports</td>
+              <td>
+                Jira provides issue and project management data, including bug
+                reports, tasks, feature requests, priorities, statuses,
+                assignees, comments, and timestamps. This data can be used to
+                study how teams track defects, manage workloads, and monitor
+                software development progress.
+              </td>
+            </tr>
+            <tr>
+              <td>App Stores</td>
+              <td>Google Play, Apple app store reviews, ratings, downloads</td>
+              <td>
+                App stores such as Google Play and the Apple App Store provide
+                app descriptions, user reviews, ratings, version histories, and
+                release dates. Download and installation metrics may also be
+                available, depending on the platform and access permissions.
+                This data can be used to study user satisfaction, reported bugs,
+                feature requests, and app adoption trends.
+              </td>
+            </tr>
+            <tr>
+              <td>Travis CI / Jenkins</td>
+              <td>Build logs, test results, and deployment data</td>
+              <td>
+                Travis CI provides continuous integration data, including build
+                histories, build statuses, execution times, job configurations,
+                and logs from compilation and testing. This data can be used to
+                study build failures, test reliability, and the impact of code
+                changes on software integration.
+              </td>
+            </tr>
+            <tr>
+              <td>Mailing Lists</td>
+              <td>Developer Discussions and Archives</td>
+              <td>
+                Mailing lists provide archived developer discussions, including
+                messages, conversation threads, sender information, and
+                timestamps. This data can be used to study technical decisions,
+                proposed features, reported bugs, and collaboration within
+                software development communities.
+              </td>
+            </tr>
+            <tr>
+              <td>NPM Registry</td>
+              <td>Package dependencies, downloads, and versions</td>
+              <td>
+                The npm registry provides software package data, including
+                package names, descriptions, versions, dependencies,
+                maintainers, publication dates, and download counts. This data
+                can be used to study package popularity, dependency
+                relationships, release patterns, and the evolution of the
+                JavaScript ecosystem.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section
+        id="collection-methods"
+        class="tab-content"
+        style="display: none"
+      >
+        <h2>Collection Methods</h2>
+      </section>
+      <section id="analysis-methods" class="tab-content" style="display: none">
+        <h2>Analysis Methods</h2>
+      </section>
+      <section
+        id="publication-venues"
+        class="tab-content"
+        style="display: none"
+      >
+        <h2>Publication Venues</h2>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
