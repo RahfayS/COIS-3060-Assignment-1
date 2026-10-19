@@ -1,0 +1,21 @@
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  # Define the test case
+  test:
+    runs-on: ubuntu-latest # Defines the OS the VM that runs the test will use
+
+    steps:
+        # Download repo code to the VM using the checkout github action
+      - name: Download repository code
+        uses: actions/checkout@v4
+
+      # Test Checking required files exist
+      - name: Check required files
+        run: |
+          test -s src/index.html
+          test -s tests/test_checklist.md
+          test -s docs/requirements.md
