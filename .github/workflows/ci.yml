@@ -20,10 +20,12 @@ jobs:
           node-version: '22'
 
       - name: Run automated tests
-        run: node --test tests/test.js
+        run: node --test tests/tests.js
+        
 
       # Test Checking required files exist
       - name: Check required files
         run: |
           test -s src/index.html
           test -s tests/test_checklist.md
+
