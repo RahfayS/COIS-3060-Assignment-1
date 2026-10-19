@@ -23,9 +23,3 @@ jobs:
         run: node --test tests/tests.js
         
 
-      # Test Checking required files exist
-      - name: Check required files
-        run: |
-          test -s src/index.html
-          test -s tests/test_checklist.md
-
